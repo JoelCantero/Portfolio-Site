@@ -1,5 +1,10 @@
-header {
+
+
+h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
+}
+
+header {
 	height: 70px;
 	margin: 10px;
 
@@ -49,11 +54,16 @@ header {
 }
 
 #container {
-	max-width: 800px;
+	max-width: 900px;
 	margin: auto;
 	background-color: red;
 }
 
 .work {
-	width: 33%;
+	display: block;
+	float: left;
+}
+
+#featured-work {
+	display: flex;
 }
