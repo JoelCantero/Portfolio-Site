@@ -1,0 +1,59 @@
+header {
+	font-family: 'Raleway', sans-serif;
+	height: 70px;
+	margin: 10px;
+
+}
+
+#header-logo {
+	height: 70px;
+	float:left;
+}
+
+#header-titles {
+	float: right;
+	background-color: green;
+	height: 100%;
+	vertical-align: middle;
+
+}
+
+#header-name h1, #header-subtitle h3 {
+	text-align: right;
+	text-transform: uppercase;
+	background-color: orange;
+	margin: 0px;
+}
+
+#header-name h1 {
+	line-height: 50px;
+}
+#header-name h3 {
+	line-height: 10px;
+}
+
+#header-name {
+
+}
+#header-subtitle {
+	background-color: blue;
+
+}
+
+#separator {
+	margin-top: 20px;
+	color: black;
+	width:100%;
+	float: left;
+	border-top: 5px solid #7d97ad;
+}
+
+#container {
+	max-width: 800px;
+	margin: auto;
+	background-color: red;
+}
+
+.work {
+	width: 33%;
+}
