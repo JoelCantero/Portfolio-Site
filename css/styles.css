@@ -1,5 +1,3 @@
-
-
 h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
 }
@@ -7,6 +5,7 @@ h1, h2, h3, h4, h5 {
 header {
 	height: 70px;
 	margin: 10px;
+	margin-bottom: 50px
 
 }
 
@@ -17,7 +16,6 @@ header {
 
 #header-titles {
 	float: right;
-	background-color: green;
 	height: 100%;
 	vertical-align: middle;
 
@@ -26,26 +24,18 @@ header {
 #header-name h1, #header-subtitle h3 {
 	text-align: right;
 	text-transform: uppercase;
-	background-color: orange;
 	margin: 0px;
 }
 
 #header-name h1 {
-	line-height: 50px;
+	height: 50px;
 }
-#header-name h3 {
-	line-height: 10px;
-}
-
-#header-name {
-
-}
-#header-subtitle {
-	background-color: blue;
-
+#header-subtitle h3 {
+	height: 20px;
 }
 
-#separator {
+#separator hr {
+	margin-bottom: 20px;
 	margin-top: 20px;
 	color: black;
 	width:100%;
@@ -54,16 +44,61 @@ header {
 }
 
 #container {
-	max-width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1000px;
 	margin: auto;
-	background-color: red;
 }
 
 .work {
-	display: block;
 	float: left;
+	background-color: blue;
+	width: calc((100% - 20px)/3);
+	margin-right: 10px;
+}
+.work:last-of-type {
+	margin-right: 0px;
+}
+
+.work h3 {
+	text-align: center;
+}
+
+.work-img {
+	width: 100%;
+}
+
+#featured-img img{
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
 }
 
 #featured-work {
+	float: left;
 	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+#featured-work-title {
+	color: #7d97ad;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	#container {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.work {
+		width: calc((100% - 20px)/2);
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.work {
+		width: 100%;
+	}
 }
