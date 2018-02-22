@@ -3,11 +3,13 @@
 <head>
 	<title>Joel Cantero | Portfolio Site</title>
 	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 </head>
 <body>
+	<!-- Here is our main header that is used across all the devices -->
 	<header>
 		<img id="header-logo" src="img/udacity-logo.svg" alt="Udacity logo">
 		<div id="header-titles">
@@ -18,13 +20,16 @@
 			<hr>
 		</div>
 	</header>
+	<!-- Here is our page's main content -->
 	<main>
-			<img id="featured-img" src="img/featured-img_450.jpg"  srcset="img/featured-img_1000.jpg 1000w, img/featured-img_768.jpg 768w, img/featured-img_450.jpg 450w" alt="I like coding :)">
-
+		<!-- Here is our main image -->
+		<img id="featured-img" src="img/featured-img_450.jpg"  sizes="100vw" srcset="img/featured-img_1000.jpg 1000w, img/featured-img_768.jpg 768w, img/featured-img_450.jpg 450w" alt="I like coding :)">
 		<section id="featured-work">
 			<div id="featured-work-title">
 				<h2>Featured work</h2>
 			</div>
+			<!-- It contains an work article -->
+			<!-- TODO: add other works -->
 			<article class="work">
 				<img class="work-img" src="img/animal-trading-cards.jpg" alt="Animal Trading Cards Project">
 				<h3>Animal Trading Cards</h3>
